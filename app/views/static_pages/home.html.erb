@@ -1,3 +1,11 @@
 <% provide(:title, "Home") %>
-<h1>Footprint#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+
+<div class="center jumbotron">
+	<h1>Welcome to Footprint</h1>
+
+	<h2>当你低头的瞬间，才发觉脚下的路</h2>
+
+	<%= link_to "Start journey", signup_path, class: " btn btn-lg btn-primary" %>
+</div>
+
+<%= link_to image_tag("default.jpg", alt: "logo"), 'app/assets/images/default.jpg' %>
