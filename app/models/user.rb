@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+	attr_accessor :remember_token
 	VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
 	before_save { self.email = email.downcase }
@@ -18,4 +19,24 @@ class User < ActiveRecord::Base
 
 	end
 
+	# Returns a random token
+	def User.new_token
+		SecureRandom.urlsafe_base64
+	end
+
+    # Remember a user in the database for use in persistent session
+	def remember
+		self.remember_token = User.new_token
+		update_attribute(:remember_digest, User.digest(remember_token))
+	end
+
+    # Return true if the given token matches the digest
+    def authenticated?(remember_token)
+    	BCrypt::Password.new(remember_digest).is_password?(remember_token)
+    end
+
+    # Forget a user
+    def forget
+    	update_attribute(:remember_token, nil)
+    end
 end
