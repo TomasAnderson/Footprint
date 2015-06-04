@@ -7,6 +7,12 @@ gem 'rails', '4.2.1'
 gem 'bootstrap-sass', '3.3.4.1'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+# Use faker gem to make users for demo
+gem 'faker', '1.4.3'
+# Use will_paginate to let a few users show up on a page
+gem 'will_paginate', '3.0.7'
+# User bootstrap's pagination styles
+gem 'bootstrap-will_paginate', '0.0.10'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
