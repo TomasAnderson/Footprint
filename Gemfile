@@ -6,7 +6,7 @@ gem 'rails', '4.2.1'
 #Use bootstrap as the font-end frame-work
 gem 'bootstrap-sass', '3.3.4.1'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'sqlite3', '1.3.10'
 # Use faker gem to make users for demo
 gem 'faker', '1.4.3'
 # Use will_paginate to let a few users show up on a page
