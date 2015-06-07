@@ -28,7 +28,12 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
-#use byebug gem to debug
+# Ruby cloud services library which supports all major cloud providers
+gem 'fog', '>=1.31.0'
+# Manipulate images with minimal use of memory via ImageMagick
+gem 'mini_magick', '4.2.7'
+# Upload files in application, map them to a range of ORMs, store them on different backends
+gem 'carrierwave', '0.10.0'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
