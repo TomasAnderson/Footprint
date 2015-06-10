@@ -13,7 +13,7 @@ But these solutions have their own limitations. Google Map has many limitations 
 Our project hope to provide a one-stop solution that can record travelling information (e.g. photos, locations, routes, travelogues) and represent nicely.
 
 More features will be shown in User story part.
-
+yes it is.
 PROPOSED LEVEL OF ACHIEVEMENT
 
 Gemini is our primary goal. May be re-evaluated to Apollo 11.
