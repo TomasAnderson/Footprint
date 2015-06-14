@@ -1,14 +1,13 @@
 class CreateRelationships < ActiveRecord::Migration
   def change
     create_table :relationships do |t|
-      t.string :follower_id
-      t.string :integer
+      t.integer :follower_id
       t.integer :followed_id
 
       t.timestamps null: false
     end
+  end
     add_index :relationships, :follower_id
     add_index :relationships, :followed_id
     add_index :relationships, [:follower_id, :followed_id], unique: true
-  end
 end
